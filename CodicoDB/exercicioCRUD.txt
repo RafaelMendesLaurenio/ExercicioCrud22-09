@@ -1,0 +1,22 @@
+create database CadastroDeProfessor;
+create table usuario(
+nome varchar(20) not null,
+senha varchar(20) not null
+);
+create table usuarioLogin(
+nome varchar(20) not null,
+dataHora dateTime
+);
+create table Professor(
+id int primary key auto_increment,
+nome varchar(60) not null,
+);
+
+version 2.0
+
+create database CadastroDeProfessor;
+create table professor(
+id int primary key auto_increment,
+nome varchar(60) not null,
+senha int not null
+);
